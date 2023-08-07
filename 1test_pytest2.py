@@ -46,5 +46,5 @@ def test_pytest2_06():
 
 # if __name__ == '__main__':
 #     pytest.main()
-#     # pytest.main(['/test_pytest2.py', '-s', '-q', '--alluredir', '/report'])
+#     # pytest.main(['/1test_pytest2.py', '-s', '-q', '--alluredir', '/report'])
 #     # os.system('allure generate ./report -o ./report --clean')

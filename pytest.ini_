@@ -1,5 +1,0 @@
-[pytest]
-addopts = -vs --alluredir ./report --clean-alluredir
-addopts = -vs
-testpaths = ./Test_P1
-python_files = test_*.py

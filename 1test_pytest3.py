@@ -32,5 +32,5 @@ class Test_Pytest3:
 #     Test_Pytest3.test_login_03(self)
 #     Test_Pytest3.test_login_02(self)
 #     Test_Pytest3.test_login_01(self)
-#     # pytest.main(['/test_pytest2.py', '-s', '-q', '--alluredir', '/report'])
+#     # pytest.main(['/1test_pytest2.py', '-s', '-q', '--alluredir', '/report'])
 #     # os.system('allure generate ./report -o ./report --clean')

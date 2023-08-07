@@ -1,6 +1,7 @@
 import pytest
 import allure
 
+@pytest.mark.smoke
 @pytest.mark.run(order=1)
 @pytest.mark.slow
 @allure.severity("normal")
@@ -18,21 +19,21 @@ def test_pytest4_01():
 def test_pytest4_02():
     assert 1 == 1
 
-@pytest.mark.run(order=4)
-@allure.severity("normal")
-@allure.story("Story1: test_pytest4_03")
-@allure.title("Testcase: test_pytest4_03")
-def test_pytest4_03():
-    assert 2 == 2
-
-@pytest.mark.run(order=3)
-# @pytest.mark.xfail(condition=None, *, reason=None, raises=None, run=True, strict=False)
-@allure.story("Story1: test_pytest4_04")
-@allure.title("Testcase: test_pytest4_04")
-def test_pytest4_04():
-    assert 3 == 4
+# @pytest.mark.run(order=4)
+# @allure.severity("normal")
+# @allure.story("Story1: test_pytest4_03")
+# @allure.title("Testcase: test_pytest4_03")
+# def test_pytest4_03():
+#     assert 2 == 2
+#
+# @pytest.mark.run(order=3)
+# # @pytest.mark.xfail(condition=None, *, reason=None, raises=None, run=True, strict=False)
+# @allure.story("Story1: test_pytest4_04")
+# @allure.title("Testcase: test_pytest4_04")
+# def test_pytest4_04():
+#     assert 3 == 4
 
 # if __name__ == '__main__':
 #     pytest.main()
-#     # pytest.main(['/test_pytest2.py', '-s', '-q', '--alluredir', '/report'])
+#     # pytest.main(['/1test_pytest2.py', '-s', '-q', '--alluredir', '/report'])
 #     # os.system('allure generate ./report -o ./report --clean')
