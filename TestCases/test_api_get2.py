@@ -6,11 +6,11 @@ class Test_Api_Get2():
     def test_get2(self):
         s = requests.Session()
         r = s.get("https://result.eolink.com/vk17wiAd3a7119b4f476f76f44ddf904c0bdbc6aa6ae800?uri=/user/points.php")
-        print("---below is r---")
-        pprint(r)  # for debug use
-        print("---below is r.json()---")
-        pprint(r.json())  # for debug use
-        print("---end printing---")
+        # print("---below is r---")
+        # pprint(r)  # for debug use
+        # print("---below is r.json()---")
+        # pprint(r.json())  # for debug use
+        # print("---end printing---")
         for key, value in r.json().items():
             if key == "points":
                 assert value == 100

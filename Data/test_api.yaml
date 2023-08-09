@@ -1,0 +1,28 @@
+# Positive Test Case1
+-
+  name: get token api
+  request:
+    url: https://api.weixin.qq.com/cgi-bin/token
+    method: get
+    headers:
+      Content-Type: application/json
+    params:
+      grant_type: client_credential
+      appid: wx6b11b3efd1cdc290
+      secret: 106a9c6157c4db5f6029918738f9529d
+    validate:
+      expires_in: 7200
+
+# Negative test Case2
+-
+  name: get token api failure
+  request:
+    url: https://api.weixin.qq.com/cgi-bin/token
+    method: get
+    headers:
+      Content-Type: application/json
+    params:
+      appid: wx6b11b3efd1cdc290
+      secret: 106a9c6157c4db5f6029918738f9529d
+    validate:
+      errcode: 40002
