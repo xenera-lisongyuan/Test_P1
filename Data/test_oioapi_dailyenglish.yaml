@@ -1,0 +1,19 @@
+# Positive Test Case1
+-
+  name: get Daily English Positive
+  request:
+    url: https://api.oioweb.cn/api/common/OneDayEnglish
+    method: get
+    validate:
+      code: 200
+      msg: success
+
+# Negative test Case2
+-
+  name: get Daily English Negative
+  request:
+    url: https://api.oioweb.cn/api/common/OneDayEnglish1
+    method: get
+    validate:
+      code: 404
+      msg: 小可爱你是迷路了吗？

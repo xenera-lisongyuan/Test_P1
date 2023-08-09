@@ -2,7 +2,7 @@
 # _*_ coding: utf-8 _*_
 
 import pytest, requests
-from Test_P1.utilities.yaml_util import YamlUtil
+from utilities.yaml_util import YamlUtil
 
 class TestYamlApi:
 
